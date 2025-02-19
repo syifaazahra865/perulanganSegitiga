@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //coding for
+        for(let i=10; i>=0; i--){
+            document.write(`<p>${i}</p>`);
+        }
+
+        //coding while
+        let i = 0; //Mulai dari 0
+        while (i <= 10) { //Berhenti ketika i lebih dari 10
+            document.write(`<p>${i}</p>`); //Cetak angka ke halaman
+            i++; //Increment untuk menaikkan nilai i
+        }
+
+        //coding segitiga angka
+        let star="";
+        for (let i=9; i>=1; i--){
+            for(let j=0; j<i; j++){
+                star += i;
+            }
+            star += "<br>";
+        }
+        document.write(star);
+
+        //coding segitiga bintang
+        let bintang="";
+        for (let i=9; i>=1; i--){ //Jumlah baris
+            for(let j=0; j<i; j++){ //Jumlah bintang per baris
+                bintang += "*";
+            }
+            bintang += "<br>"; //Pindah ke baris baru
+        }
+        document.write(bintang);
+    </script>
+</body>
+</html>
